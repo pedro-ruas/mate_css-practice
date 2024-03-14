@@ -1,1 +1,19 @@
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: center;
+  gap: 40px 30px;
+    // row-gap: 40px;
+    // column-gap: 30px;
+  padding: 30px 35px;
+    // padding: 30px 35px 30px 35px;
+    // padding-top: 30px;
+    // padding-right: 35px;
+    // padding-bottom: 30px;
+    // padding-left: 35px;
+
+  @media (width >= 1000px) {
+    grid-template-columns: repeat(4, 200px);
+  }
+}
 
