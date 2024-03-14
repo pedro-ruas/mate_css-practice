@@ -15,6 +15,10 @@
   @media (width >= 1000px) {
     grid-template-columns: repeat(4, 200px);
   }
+
+  &__person.container {
+    position: relative;
+  }
 }
 
 .person {
@@ -27,6 +31,22 @@
     // padding-left: 10px;
   margin: -10px -10px -16px;
   border-radius: 10px;
+  transform-origin: center 110px;
+
+  &:hover {
+    position: absolute;
+    z-index: 1;
+    transform: scale(1.2);
+    background-color: #eee;
+
+    .person__extra {
+      display: block;
+    }
+
+    .person__image {
+      border-radius: 60px;
+    }
+  }
 
   &__extra {
     display: none;
@@ -80,5 +100,19 @@
     font-size: 20px;
     line-height: 23px;
     font-weight: 600;
+  }
+
+  &__sport::after {
+    content: ",";
+  }
+
+  &__pay {
+    &::before {
+      content: "$";
+    }
+
+    &::after {
+      content: "M";
+    }
   }
 }
