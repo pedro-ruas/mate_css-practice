@@ -32,6 +32,7 @@
   margin: -10px -10px -16px;
   border-radius: 10px;
   transform-origin: center 110px;
+  transition: transform 1s;
 
   &:hover {
     position: absolute;
@@ -65,6 +66,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
+    transition: border-radius 1s;
   }
 
   &__rank {
